@@ -1,0 +1,20 @@
+:root {
+  --backToBg:#000;
+  --textColor:#fff;
+  --padding:10px 15px;
+  --border-radius:20px;
+  --cursor:pointer;
+}
+
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  background:var(--backToBg);
+  color: var(--textColor);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  cursor: var(--cursor);
+  display: none;
+}
