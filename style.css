@@ -1,20 +1,34 @@
 :root {
-  --backToBg:#000;
+  --backToBtnBg:#000;
   --textColor:#fff;
   --padding:10px 15px;
-  --border-radius:20px;
-  --cursor:pointer;
+  --border-radius:50%;
+  --position-bottom:20px;
+  --position-right:40px;
+  --upward-icon-width:24px;
+  --upward-icon-height:24px;
+  --upward-icon-fill:#fff;
+  --alignment: right;
 }
 
-button {
+#scrollToTop {
   position: fixed;
-  bottom: 20px;
-  right: 40px;
+  bottom: var(--position-bottom);
+  right: var(--position-right);
   z-index: 99;
-  background:var(--backToBg);
+  background:var(--backToBtnBg);
   color: var(--textColor);
   border-radius: var(--border-radius);
   padding: var(--padding);
-  cursor: var(--cursor);
+  cursor: pointer;
   display: none;
+  border: none;
+  outline: none;
+  align-items: var(--alignment);
+
+  svg {
+    fill: var(--upward-icon-fill);
+    width: var(--upward-icon-width);
+    height: var(--upward-icon-height);
+  }
 }
